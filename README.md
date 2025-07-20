@@ -1,4 +1,4 @@
-# ☁️ AWS Auto Scaling Architecture with Load Balancer & Secure VPC ☁️
+# ☁️AWS Auto Scaling Architecture with Load Balancer & Secure VPC☁️
 
 This project demonstrates a secure, highly available, and scalable AWS infrastructure. It includes a custom VPC with public and private subnets, an Application Load Balancer (ALB), and an Auto Scaling Group (ASG) that dynamically manages EC2 instances based on CPU usage.
 
@@ -34,7 +34,7 @@ This project demonstrates a secure, highly available, and scalable AWS infrastru
 | Component | Inbound Rules | Notes |
 |----------|----------------|-------|
 | **Application-load-balancer SG** | HTTP (80) from anywhere (`0.0.0.0/0`) | Only public entry point |
-| **Auto-scaling-group SG ** | HTTP (80) from ALB SG only | No public access |
+| **Auto-scaling-group SG** | HTTP (80) from ALB SG only | No public access |
 | **SSH Access** | **Disabled** from public | SSH access was temporarily done using a Bastion host |
 
 ---
